@@ -1,0 +1,39 @@
+# Gradle
+.gradle/
+build/
+!build/libs/*.jar
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.settings/
+.classpath
+.project
+bin/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Documentation
+README.md
+*.md
+
+# Tests (optional - remove if you want to run tests in Docker)
+src/test/
+
+# Logs
+logs/
+*.log
+
+# Docker
+Dockerfile
+.dockerignore
+docker-compose.yml

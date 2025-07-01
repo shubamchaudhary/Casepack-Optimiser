@@ -1,0 +1,14 @@
+# Simple Dockerfile - requires JAR to be built locally first
+FROM openjdk:17-jdk-slim
+
+# Create app directory
+WORKDIR /app
+
+# Copy the JAR file
+COPY build/libs/*.jar app.jar
+
+# Expose port
+EXPOSE 8080
+
+# Run the application
+ENTRYPOINT ["java", "-jar", "app.jar"]
